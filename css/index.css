@@ -1,0 +1,10 @@
+/* This makes the whole page load with 0 margin on the sides and padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* This removes the list bullets on the unordered list */
+ul {
+    list-style-type: none;
+}
