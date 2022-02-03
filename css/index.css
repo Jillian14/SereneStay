@@ -4,7 +4,31 @@
     margin: 0;
 }
 
+.navbar {
+    background-color: aquamarine;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    top: 0em;
+}
+
 /* This removes the list bullets on the unordered list */
-ul {
-    list-style-type: none;
+.unlist {
+    display: flex;
+}
+
+/* this is the padding of the lists in the ul */
+.unlist li {
+    list-style: none;
+    padding: 5px 5px;
+}
+
+.unlist li a {
+    text-decoration: none;
+    color: white;
+}
+
+.unlist li a:nth-child(1) {
+    
 }
