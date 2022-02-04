@@ -2,33 +2,49 @@
 * {
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
 }
 
 .navbar {
-    background-color: aquamarine;
-    display: flex;
-    position: sticky;
-    align-items: center;
-    justify-content: center;
-    top: 0em;
+    background: lightblue;
+    height: 4em;
+    width: 100%;
 }
 
-/* This removes the list bullets on the unordered list */
-.unlist {
-    display: flex;
+/* this selects every label element with the id logo **supposed to be a class but well  */
+label#logo {
+    background-color: aqua;
+    line-height: 60px;
+    padding: 0 100px;
 }
 
-/* this is the padding of the lists in the ul */
-.unlist li {
-    list-style: none;
-    padding: 5px 5px;
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
 
-.unlist li a {
-    text-decoration: none;
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+nav ul li a {
     color: white;
+    padding: .6em 1.3em;
+    border-radius: 3em;
+    text-transform: uppercase;
 }
 
-.unlist li a:nth-child(1) {
-    
+/* selects the active link based on the html an transforms the hovered a tags */
+a.active, a:hover {
+    background: blue;
+    transition: .5s;
 }
+
