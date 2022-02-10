@@ -12,16 +12,22 @@ body {
 }
 
 .navbar {
-    background: lightblue;
+    background: #205353;
     height: 4em;
     width: 100%;
 }
+
+/* Makes the hamburger menu invisible in the desktop version */
+#ham {
+    display: none;
+}
+
 
 /* this selects every label element with the id logo **supposed to be a class but well  */
 label#logo {
     background-color: aqua;
     line-height: 60px;
-    padding: 0 100px;
+    padding: 0 20px;
 }
 
 nav ul {
@@ -44,7 +50,44 @@ nav ul li a {
 
 /* selects the active link based on the html an transforms the hovered a tags */
 a.active, a:hover {
-    background: blue;
+    background: #aa5239;
     transition: .5s;
 }
 
+@media screen and (max-width: 650px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    label {
+        max-width: 10px;
+        height: 10px;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    ul {
+        display: none;
+    }
+
+    #ham {
+        display: grid;
+        background-image: url("../images/hamb.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        float: right;
+        margin-top: 15px;
+        margin-right: 15px;
+        background-color: #aa5239;
+        border-radius: 50%;
+        padding: 1em 1em;
+    }
+
+    
+
+    
+}
