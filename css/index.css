@@ -1,85 +1,109 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-color: gray;
-}
-
-.container {
-    width: 100%;
-    min-height: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
     box-sizing: border-box;
-    overflow: hidden;
+    text-decoration: none;
 }
 
-.navbar {
-    width: 100%;
+body {
+    min-height: 100vh;
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 20px 7%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
 }
 
-.logo {
-    width: 70px;
-    cursor: pointer;
-    margin: 30px 0;
+header .logo {
+    max-width: 50px;
 }
 
-.ham {
-    width: 25px;
-    cursor: pointer;
-    display: none;
-}
-
-nav {
-    flex: 1;
-    text-align: right;
-}
-
-nav ul li {
+header .navbar ul {
     list-style: none;
-    display: inline-block;
-    margin-right: 30px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
+header .navbar ul li {
+    position: relative;
+    float: left;
 }
 
-nav ul li a:hover {
-    color: #ff5ea2;
+header .navbar ul li a {
+    padding: 15px;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    color: #ffbdaa;
 }
 
 .active {
     color: #ffbdaa;
 }
 
+#menu-bar {
+    display: none;
+}
+
+header label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Website details and words */
+
+.contents {
+    margin-top: 8em;
+    display: flex;
+    justify-content: center;
+    background-color: springgreen;
+}
+
+
 
 @media only screen and (max-width:700px) {
-    nav ul {
-        width: 100%;
-        background: linear-gradient(#ffa154, #34fa1a);
+
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
         position: absolute;
-        top: 75px;
+        top: 100%;
+        left: 0;
         right: 0;
-        z-index: 2;
+        background-color: rgb(255, 255, 0);
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
     }
 
-    nav ul li {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    header .navbar ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    nav ul li a {
-        color: #fff;
+    #menu-bar:checked ~ .navbar {
+        display: initial;
     }
 
-    .ham {
-        display: block;
+/* Website details and words mobile version and small tweaks */
+    .contents {
+        margin-top: 10em;
+        justify-content: center;
     }
-    
 }
