@@ -7,7 +7,7 @@
 
 body {
     min-height: 100vh;
-    background: url() no-repeat;
+    background: linear-gradient(90deg, rgb(171, 251, 139), rgb(247, 255, 138));
     background-size: cover;
     background-position: center;
 }
@@ -17,13 +17,13 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 10px 80px rgba(0, 0, 0, 1);
     padding: 20px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    background-color: #ffd0a8;
+    background: rgb(204, 255, 109);
 }
 
 header .logo {
