@@ -3,33 +3,39 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    color: black;
+
+    
 }
 
 @font-face {
-    font-family: "Avatar";
+    font-family: "Cascade";
     src: url(../Fonts/CascadeScriptLTStd.otf);
 }
 
 @font-face {
-    font-family: "Avatar";
+    font-family: "PlayfairI";
     src: url(../Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: "Avatar";
+    font-family: "Playfair";
     src: url(../Fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: "Avatar";
+    font-family: "Zap";
     src: url(../Fonts/Zapf\ Chancery\ Font.otf);
 }
 
 body {
     min-height: 100vh;
-    background: linear-gradient(90deg, rgb(171, 251, 139), rgb(247, 255, 138));
+    /* background: url("../images/lay1.png"); */
+    background: linear-gradient(90deg, rgb(255,221,170), rgb(212, 170, 105));
     background-size: cover;
     background-position: center;
+    font-family: "Playfair", monospace;
+    /* color: white; */
 }
 
 header {
@@ -43,11 +49,16 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    background: rgb(204, 255, 109);
+    /* background: rgb(201, 128, 20); */
+    background: linear-gradient(90deg, rgb(201, 128, 20), rgb(251, 221, 175));
+    font-family: "Playfair", monospace;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 3px;
 }
 
 header .logo {
-    max-width: 50px;
+    max-width: 5em;
 }
 
 header .navbar ul {
@@ -57,6 +68,7 @@ header .navbar ul {
 header .navbar ul li {
     position: relative;
     float: left;
+    text-transform: uppercase;
 }
 
 header .navbar ul li a {
@@ -65,11 +77,11 @@ header .navbar ul li a {
 }
 
 header .navbar ul li a:hover {
-    color: #ffbdaa;
+    color: #570dce;
 }
 
 .active {
-    color: #ffbdaa;
+    color: rgb(131, 63, 209);
 }
 
 #menu-bar {
@@ -85,10 +97,45 @@ header label {
 
 .contents {
     margin-top: 8em;
-    display: flex;
-    justify-content: center;
-    background-color: springgreen;
+    display: inline;
 }
+
+.contents h1 {
+    margin-top: 2em;
+    text-align: center;
+    font-family: "Zap";
+    font-weight: 600;
+    font-size: 5em;
+}
+
+.contents p {
+    margin-top: 1em;
+    text-align: center;
+    text-indent: 3em;
+    line-height: 1.6;
+    margin-left: 5em;
+    margin-right: 5em;
+    font-family: "Playfair";
+    font-size: 1em;
+}
+
+.contents img {
+    margin-top: 2em;
+    margin-left: 30%;
+}
+
+
+/* This is the foooter containing the website copyrights information and trademarks  */
+/* .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+    text-align: center;
+} */
 
 
 
@@ -107,9 +154,11 @@ header label {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: rgb(255, 255, 0);
-        border-top: 1px solid rgba(0, 0, 0, .1);
+        background: linear-gradient(90deg, rgb(251, 221, 175), rgb(201, 128, 20));
+        /* border-top: 1px solid rgba(0, 0, 0, .1); */
+        box-shadow: 0 30px 10px rgba(0, 0, 0, 0.185);
         display: none;
+
     }
 
     header .navbar ul li {
@@ -126,5 +175,23 @@ header label {
     .contents {
         margin-top: 10em;
         justify-content: center;
+    }
+
+    .contents p {
+        margin-top: 1em;
+        text-align: center;
+        text-indent: 1px;
+        line-height: 1.6;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-family: "Playfair", monospace;
+        font-size: 19px;
+
+    }
+
+    .contents img {
+        margin-top: 2em;
+        margin-left: 10%;
+        max-width: 20em;
     }
 }
