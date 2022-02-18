@@ -7,7 +7,7 @@
 
 body {
     min-height: 100vh;
-    background: url() no-repeat;
+    background: orange;
     background-size: cover;
     background-position: center;
 }
