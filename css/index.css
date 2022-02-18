@@ -5,6 +5,26 @@
     text-decoration: none;
 }
 
+@font-face {
+    font-family: "Avatar";
+    src: url(../Fonts/CascadeScriptLTStd.otf);
+}
+
+@font-face {
+    font-family: "Avatar";
+    src: url(../Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Avatar";
+    src: url(../Fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Avatar";
+    src: url(../Fonts/Zapf\ Chancery\ Font.otf);
+}
+
 body {
     min-height: 100vh;
     background: linear-gradient(90deg, rgb(171, 251, 139), rgb(247, 255, 138));
