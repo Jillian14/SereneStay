@@ -68,6 +68,26 @@ header label {
     justify-content: center;
     background-color: springgreen;
 }
+div{
+    
+    height:20em;
+    width:20em;
+    padding: 10px;
+}
+/* css changes to the divs containing the activities */
+.HOME{
+    float:left;
+    justify-content: center;
+    margin-right: 7em;
+
+}
+.HOME:hover{
+    border-width: 1em;
+    box-shadow: 10px 10px 10px;
+    height: 30em;
+    width: 30em;
+    
+}
 
 
 
