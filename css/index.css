@@ -23,6 +23,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    background-color: #ffd0a8;
 }
 
 header .logo {

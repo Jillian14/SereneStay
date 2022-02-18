@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+    color: black;
+}
+
+p {
+    margin-top: 10em;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+
+.gallery-1 {
+    margin-top: 5em;
+    max-height: 30em;
+    display: flex;
+    overflow-x: auto;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.gallery-1::-webkit-scrollbar{
+    width: 0;
+}
+
+.gallery-1 .all {
+    text-align: center;
+    margin-left: 2em;
+}
+
+@keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1500px, 0, 0); /* The image width */
+    }
+  }
+
+.gallery-1 div {
+    /* height: 400px;
+    min-width: 300px;
+    margin-left: 100px; */
+    animation: slide 15s linear infinite;
+  }
+
+img {
+    border-radius: 5% 5%;
+}
+
+@media only screen and (max-width:700px) {
+
+}
